@@ -138,7 +138,14 @@ bool an_instance_of(const any& a) {
 
 
 int main(){
-    const property<int> a(5);
-    const property<int> b(10);
+    class point {
+        public:
+            property<int> x;
+            property<int> y;
+            point(int x, int y): x(x),y(y) {}
+            void repr(){
+                cout << "(" << x << "," << y << ")";
+            }
+    };
     return 0;
 }
