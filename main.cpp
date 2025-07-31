@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <any>
+
 using namespace std;
 
 
@@ -138,14 +139,6 @@ bool an_instance_of(const any& a) {
 
 
 int main(){
-    class point {
-        public:
-            property<int> x;
-            property<int> y;
-            point(int x, int y): x(x),y(y) {}
-            void repr(){
-                cout << "(" << x << "," << y << ")";
-            }
-    };
+    []{};
     return 0;
 }
