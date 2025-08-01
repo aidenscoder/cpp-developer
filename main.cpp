@@ -145,9 +145,9 @@ int main(){
             property<int> x;
             property<int> y;
             point(int x, int y): x(x),y(y) {
-                cout << "point object created" << endl;
+                cout << "point object created:(" << this->x << "," << this->y << ")\n";
             }
     };
-
+    point x(1,2);
     return 0;
 }
