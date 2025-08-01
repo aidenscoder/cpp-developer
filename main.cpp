@@ -9,15 +9,9 @@ template<typename T>
 class property {
     private:
         T value;
-        string representation;
     public:
-        property(T value,string representation = ""){
+        property(T value){
             this->value = value;
-            if (representation == ""){
-                this->representation = this->value;
-            } else {
-                this->representation = representation;
-            }
         }
 
         //standard operators
@@ -129,9 +123,7 @@ class property {
             this->value = value;
             return *this;
         }
-        string represent(){
-            return this->representation;
-        }
+
     };
 
 
