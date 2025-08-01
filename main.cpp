@@ -6,7 +6,7 @@ using namespace std;
 
 
 template<typename T>
-class property{
+class property {
     private:
         T value;
     public:
@@ -139,6 +139,13 @@ bool an_instance_of(const any& a) {
 
 
 int main(){
-    []{};
+    class point {
+        public:
+            property<int> x;
+            property<int> y;
+            point(int x, int y): x(x),y(y) {
+                cout << "point object created" << endl;
+            }
+    };
     return 0;
 }
