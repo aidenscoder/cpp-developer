@@ -8,8 +8,6 @@ using namespace std;
 
 int main() {
     int z = 10;
-    auto add = function(int x, int y) {
-        int& z = z;
-    };
+    auto add = function(int x, int y) {};
     return 0;
 }
